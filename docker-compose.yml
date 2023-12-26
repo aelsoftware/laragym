@@ -3,11 +3,11 @@ php-fpm:
   dockerfile: ./Dockerfile
   container_name: laragym_php
   volumes:
-    - .:/var/www/laravel
-    - ~/.env:/var/www/laravel/.env
+    - .:/var/www/gymsolution
+    - ~/.env:/var/www/gymsolution/.env
   links:
     - redis
-  working_dir: /var/www/laravel
+  working_dir: /var/www/gymsolution
 nginx:
   image: nginx:alpine
   container_name: laragym_nginx
